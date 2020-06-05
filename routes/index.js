@@ -11,6 +11,7 @@ const { getCourses, getCourse, getLesson, getCoursesByCategory } = require('./co
 const { getSettings, postSettings } = require('./settings')
 const { getLandingPage } = require('./landingPage')
 const { getImprint } = require('./imprint')
+const { sendEmail } = require('./email');
 
 // Display settings in case of invalid credentials
 router.all('*', async (request, response, next) => {
@@ -35,6 +36,8 @@ router.get('/courses/:cslug/lessons/:lslug', catchErrors(getLesson))
 // Settings routes
 router.get('/settings', catchErrors(getSettings))
 router.post('/settings', catchErrors(postSettings))
+router.post('/sendEmail', catchErrors(sendEmail))
+
 
 // Imprint route
 router.get('/imprint', catchErrors(getImprint))
