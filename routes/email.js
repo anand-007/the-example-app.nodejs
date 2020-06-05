@@ -16,7 +16,7 @@ module.exports.sendEmail = async (request, response, next) => {
 
 	console.log()
 	var msg = {
-	  to: 'anand@codeisolutions.com',
+	  to: 'info@codeisolutions.com',
 	  from: 'test@example.com',
 	  subject: subject ,
 	  text: message,
