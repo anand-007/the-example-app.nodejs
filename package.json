@@ -33,8 +33,7 @@
     "lodash": "^4.17.5",
     "marked": "^0.3.16",
     "morgan": "^1.9.1",
-    "sendgrid": "5.2.3",
-
+"@sendgrid/mail": "^6.0.0",
     "pug": "~2.0.0-beta6"
   },
   "devDependencies": {
